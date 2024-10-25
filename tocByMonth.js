@@ -26,11 +26,11 @@ function displayToCByMonth(data) {
     // Membuat accordion untuk setiap bulan
     Object.entries(postsByMonth).forEach(([monthYear, posts], index) => {
         const monthButton = document.createElement("button");
-        monthButton.classList.add("accordion-month");
+        monthButton.classList.add("toc-kw-acc-bulan");
         monthButton.textContent = monthYear; // Menggunakan nama bulan dalam bahasa Indonesia
 
         const contentDiv = document.createElement("div");
-        contentDiv.classList.add("accordion-content");
+        contentDiv.classList.add("toc-kw-acc-content");
 
         const ul = document.createElement("ul");
         posts.forEach(post => {
