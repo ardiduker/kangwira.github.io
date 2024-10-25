@@ -38,17 +38,17 @@ function displayToCByMonth(data) {
             
             // Membuat div untuk informasi postingan
             const postInfo = document.createElement("div");
-            postInfo.classList.add("post-info");
+            postInfo.classList.add("info");
 
             // Tanggal postingan
             const dateSpan = document.createElement("span");
-            dateSpan.classList.add("post-date");
+            dateSpan.classList.add("tanggal");
             dateSpan.textContent = post.publishedDate; // Tetap menggunakan format tanggal yang sama
             postInfo.appendChild(dateSpan);
 
             // Judul postingan
             const titleSpan = document.createElement("span");
-            titleSpan.classList.add("post-title");
+            titleSpan.classList.add("judul");
             const a = document.createElement("a");
             a.href = post.url;
             a.textContent = post.title; // Menampilkan judul
